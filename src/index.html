@@ -29,6 +29,11 @@
                 }
             );
         });
+
+        function comingSoon(link)
+        {
+            alert(link + ' Coming Soon!');
+        }
     </script>
 </head>
 <body>
@@ -37,14 +42,17 @@
         <header>
             <h1>
                 <span class="headerLeftContent">
-                    <a class="headerLink">
+                    <a onclick="comingSoon('Team');" class="headerLink">
                         Team
                     </a>
-                    <a class="headerLink">
+                    <a onclick="comingSoon('Vision');" class="headerLink">
                         Vision
                     </a>
-                    <a class="headerLink">
+                    <a onclick="comingSoon('Contact');" class="headerLink">
                         Contact
+                    </a>
+                    <a onclick="comingSoon('Submissions');" class="headerLink">
+                        Submissions
                     </a>
                 </span>
                 <span class="headerRightContent">
