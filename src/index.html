@@ -3,204 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <title>Digital Douche Bag</title>
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/ddb.css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css"/>
+    <link href="css/hover.css" rel="stylesheet" type="text/css"/>
+    <link href="css/ddb.css" rel="stylesheet" type="text/css"/>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/jquery.textillate.js"></script>
+    <script>
+        jQuery(document).ready(function ($)
+        {
+            // quote text animation
+            $('.ddbQuoteTxt').textillate(
+                {
+                    initialDelay: 1000,
+                    in: { effect: 'bounceInDown' }
+                }
+            );
+
+            // hashtag text animation
+            $('.ddbQuoteHashTags').textillate(
+                {
+                    initialDelay: 2500,
+                    in: { effect: 'fadeIn' }
+                }
+            );
+        });
+    </script>
 </head>
 <body>
 <div id="ddb">
     <div class="container">
         <header>
             <h1>
-                    <span class="headerLeftContent">
-                        <a class="headerLink">
-                            Home
-                        </a>
-                        <a class="headerLink">
-                            About
-                        </a>
-                        <a class="headerLink">
-                            Team
-                        </a>
-                        <a class="headerLink">
-                            Contact
-                        </a>
-                    </span>
+                <span class="headerLeftContent">
+                    <a class="headerLink">
+                        Team
+                    </a>
+                    <a class="headerLink">
+                        Vision
+                    </a>
+                    <a class="headerLink">
+                        Contact
+                    </a>
+                </span>
                 <span class="headerRightContent">
-                        <a>
-                            <img id="facebook" src="img/fb.png" class="headerIcon">
-                        </a>
-                        <a>
-                            <img id="instagram" src="img/instagram.png" class="headerIcon">
-                        </a>
-                    </span>
+                    <a>
+                        <img id="facebook" src="img/fb.png" class="headerIcon">
+                    </a>
+                    <a>
+                        <img id="instagram" src="img/instagram.png" class="headerIcon">
+                    </a>
+                </span>
             </h1>
         </header>
         <div class="mainContent">
-            <!-- TODO - automatically replace image with image of the day and quote of the day -->
-            <div id="ddbQuoteOfTheDay" class="ddbQuoteOfTheDay">"DIGITAL DOUCHE BAG QUOTE OF THE DAY"</div>
-            <br>
             <div>
-                <!-- TEMP IMAGE -->
-                <img id="ddbPicOfTheDay" class="ddbPicOfTheDay" src="img/ddb/ddb_main.jpg">
+                <div id="ddbQuoteOfTheDay" class="ddbQuote">
+                    <span class="ddbQuoteTxt">Travelling the world & being awesome while working remotely</span><br><br>
+                    <span class="ddbQuoteHashTags">#blessed #notallwhowanderarelost</span>
+                </div>
+                <img id="ddbPicOfTheDay" class="ddbPic" src="img/ddb/ddb_main.jpg">
             </div>
-
-            <ul>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-                <li>TODO</li>
-            </ul>
         </div>
         <footer>
             <h3>
                     <span class="footerRightContent">
-                        © 2020 by ddb.
+                        © 2020 Copyright Goes Here.
                     </span>
             </h3>
         </footer>
