@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body
+{
+    font-family: 'Raleway','HelveticaRegular',Helvetica,Arial;
+    font-size: 12px;
+    line-height: 18px;
+    min-width: 740px;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    margin: 1em;
+    background-color: #2F343B;
+}
+
+header
+{
+    background-color: #FF974F;
+    color: #405952;
+    padding: 1em;
+    -moz-flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-shrink: 0;
+    flex-shrink: 0;
+}
+
+footer
+{
+    background-color: #FF974F;
+    color: #405952;
+    padding: 0.2em;
+    -moz-flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-shrink: 0;
+    flex-shrink: 0;
+}
+
+.container
+{
+    clear: both;
+    position: absolute;
+    width: 98%;
+    height: 98%;
+
+    display: -moz-flex;
+    -moz-flex-direction: column;
+    -moz-flex-wrap: nowrap;
+
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+
+    display: -ms-flex;
+    -ms-flex-direction: column;
+    -ms-flex-wrap: nowrap;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.mainContent
+{
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    overflow: auto;
+    min-height: 2em;
+    background-color: #9C9B7A;
+    color: #2F343B;
+    padding: 1em;
+}
+
+.headerLink
+{
+    margin-right: 1.5em;
+}
+
+.headerIcon
+{
+    width: 22px;
+    height: 22px;
+}
+
+.headerLeftContent
+{
+    width:80%;
+    float:left;
+    left:2em;
+}
+
+.headerRightContent
+{
+    float:right;
+}
+
+.footerRightContent
+{
+    width:10%;
+    float:right;
+}
+
+.ddbQuoteOfTheDay
+{
+    font-size: 17px;
+    font-weight: bolder;
+    font-style: italic;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 5px;
+}
+
+.ddbPicOfTheDay
+{
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
